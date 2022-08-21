@@ -1,0 +1,19 @@
+version: '3'
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./conf.d:/etc/nginx/conf.d
+      - ./source:/source
+    links:
+      - php
+    depends_on:
+      - php
+    restart: unless-stopped
+  php:
+    image: php:7.4.0-fpm-alpine
+    volumes:
+      - ./source:/source
+    restart: unless-stopped

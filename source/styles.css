@@ -1,0 +1,212 @@
+html,
+body,
+div,
+form,
+fieldset,
+legend,
+caption,
+label,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre {
+	font-size: 100%;
+	font-weight: normal;
+
+	margin: 0;
+	padding: 0;
+
+	vertical-align: baseline;
+
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+th,
+td {
+	text-align: left;
+	vertical-align: top;
+}
+
+img {
+	border: 0;
+}
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	line-height: 1.5;
+}
+
+header,
+article,
+footer {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+}
+
+@media (min-width: 576px) {
+
+	header,
+	article,
+	footer {
+		max-width: 540px;
+	}
+}
+
+@media (min-width: 768px) {
+
+	header,
+	article,
+	footer {
+		max-width: 720px;
+	}
+}
+
+@media (min-width: 992px) {
+
+	header,
+	article,
+	footer {
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	header,
+	article,
+	footer {
+		max-width: 1140px;
+	}
+}
+
+@media (min-width: 1400px) {
+
+	header,
+	article,
+	footer {
+		max-width: 1320px;
+	}
+}
+
+header {
+	margin-top: 2rem;
+}
+
+header h1 {
+	font-size: 3rem;
+	font-weight: 300;
+	line-height: 1.2;
+	border-bottom: 1px solid #dee2e6;
+	padding-bottom: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+header p {
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 3rem 0;
+	gap: 2rem;
+}
+
+nav a {
+	text-decoration: none;
+	color: black;
+	display: flex;
+	flex: 0 0 auto;
+	max-width: 100%;
+	width: 100%;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+nav .icon {
+	margin-right: 1rem;
+}
+
+nav .icon>* {
+	font-size: 2.5rem;
+}
+
+nav h2 {
+	font-size: 2rem;
+	line-height: 2rem;
+	margin: 0 0 0.5rem 0;
+}
+
+nav p {
+	margin: 0;
+}
+
+footer {
+	border-top: 1px solid #dee2e6;
+	padding-top: 0.5rem;
+	margin-top: auto;
+	margin-bottom: 2rem;
+}
+
+footer section {
+	display: flex;
+	width: fit-content;
+	color: #6b6b6b;
+	flex-direction: column;
+}
+
+footer > section > div > span:nth-child(2) {
+	white-space: nowrap;
+}
+
+html {
+	font-size:0.8em;
+}
+
+@media (min-width: 576px) {
+	html {
+		font-size:1.0em;
+	}
+}
+
+@media (min-width: 768px) {
+	footer section {
+		flex-direction: row;
+		margin: 0 auto;
+		gap: 2rem;
+	}
+
+	nav {
+		gap: 0;
+	}
+
+	nav a {
+		width: calc(100%/3);
+	}
+}
